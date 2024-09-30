@@ -16,6 +16,7 @@ To install and run the project locally, follow these steps:
    ```bash
    conda env create -f environment.yml
 
+
 ## Configuration File (.ini)
 
 To run the agent, you need to AT LEAST replace items listed as follows including the keys and the ad product name. 
