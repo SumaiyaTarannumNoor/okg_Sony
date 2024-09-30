@@ -16,3 +16,25 @@ To install and run the project locally, follow these steps:
    ```bash
    conda env create -f environment.yml
 
+## Configuration File (.ini)
+
+To run the agent, you need to AT LEAST replace items listed as follows including the keys and the ad product name. 
+The project uses an `.ini` file to store various configurations and hyperparameters. Here’s a breakdown of the sections and their purposes:
+
+
+### [CAMPAIGN]
+- `PRODUCT_NAME`: The name of the product being advertised.
+
+### [KEY] (need to replace them with your own keys)
+- `OPENAI_GPT4_API_KEY`: API key for accessing GPT-4.
+- `OPENAI_EMBEDDING_API_KEY`: API key for accessing OpenAI embeddings.
+- `OPENAI_GPT4_AZURE_OPENAI_ENDPOINT`: Endpoint for GPT-4 Azure integration.
+- `OPENAI_EMBEDDING_AZURE_OPENAI_ENDPOINT`: Endpoint for embedding API Azure integration.
+- `SERPAPI_API_KEY`: API key for accessing SERPAPI services.
+
+
+
+## Usage
+1. Run the main script:
+   ```bash
+   python main.py
