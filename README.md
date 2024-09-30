@@ -11,10 +11,12 @@ To install and run the project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/wang1946may7/OKG.git
+   ```
 
 2.  Creating a New Environment from a YAML File: You can create a new Conda environment from a YAML file on any system with Conda installed using:
    ```bash
    conda env create -f environment.yml
+```
 
 
 ## Configuration File (.ini)
@@ -36,6 +38,14 @@ The project uses an `.ini` file to store various configurations and hyperparamet
 
 
 ## Usage
-1. Run the main script:
+Run the main script:
    ```bash
    python main.py
+   ```
+
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
+
+## Contact
+For any questions or issues, feel free to reach out: Zhao.Wang@sony.com or this github repo for any information.
