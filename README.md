@@ -11,3 +11,8 @@ To install and run the project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/wang1946may7/OKG.git
+
+2.  Creating a New Environment from a YAML File: You can create a new Conda environment from a YAML file on any system with Conda installed using:
+   ```bash
+   conda env create -f environment.yml
+
