@@ -2,7 +2,7 @@
 
 ## Description
 
-This is the repo for the paper OKG: On-the-fly Keyword Generation in Search Sponsered Advertising submitted to COLING 2025. OKG is a dynamic framework leveraging LLM agent to adaptively generate keywords for sponsored search advertising. Additionally, we provided the first publicly accessible dataset with real ad keyword data, offering a valuable resource for future research in keyword optimization. 
+This is the repo for the paper ***OKG: On-the-fly Keyword Generation in Search Sponsered Advertising*** submitted to COLING 2025. OKG is a dynamic framework leveraging LLM agent to adaptively generate keywords for sponsored search advertising. Additionally, we provided the first publicly accessible dataset with real ad keyword data, offering a valuable resource for future research in keyword optimization. 
 
 ## Installation
 
