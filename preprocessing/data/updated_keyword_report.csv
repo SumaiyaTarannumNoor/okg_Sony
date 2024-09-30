@@ -1,0 +1,101 @@
+Keyword status,Keyword,Match type,Ad group,Status,Status reasons,Conversions,Currency code,Cost / conv.,Clicks,Impr.,CTR,Avg. CPC,Cost,Conv. rate,Category
+Enabled,"""TensorFlow""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Programming and Languages
+Enabled,[AI GPU],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Cloud and Systems
+Enabled,"""ロボットAI""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Application Domains
+Enabled,[モデル検証],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Technical Features
+Enabled,"""エッジAI""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Cloud and Systems
+Enabled,[AIコース],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Educational and Community
+Enabled,"""GAN""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Learning Models
+Enabled,"""ソニーNNC""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Development Tools
+Enabled,"""リアルタイムAI""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Technical Features
+Enabled,"""ニューラルネット""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Core Technologies
+Enabled,[Neural Network Console],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Development Tools
+Enabled,[ロボットAI],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Application Domains
+Enabled,"""機械学習""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Core Technologies
+Enabled,[ディープラーニングキット],Exact match,General_01,Not eligible,rarely served,0,JPY,0,0,0, --,0,0,0.00%,Development Tools
+Enabled,[CNN],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Learning Models
+Enabled,[ニューラルネット],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Core Technologies
+Enabled,[ヘルスケアAI],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Application Domains
+Enabled,[量子AI],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Advanced Technologies
+Enabled,[AI研究],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Educational and Community
+Enabled,[AI難しい],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,User Interface
+Enabled,"""合成データ""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Advanced Technologies
+Enabled,[AIアルゴリズム],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Core Technologies
+Enabled,[マルチGPU],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Cloud and Systems
+Enabled,"""RNN""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Learning Models
+Enabled,[AIインターフェース],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,User Interface
+Enabled,"""ディープAI""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Educational and Community
+Enabled,[Keras],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Programming and Languages
+Enabled,[機械学習ソフト],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Development Tools
+Enabled,[エッジAI],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Cloud and Systems
+Enabled,[PyTorch],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Programming and Languages
+Enabled,"""AI難しい""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,User Interface
+Enabled,"""ディープラーニングキット""",Phrase match,General_01,Not eligible,rarely served,0,JPY,0,0,0, --,0,0,0.00%,Development Tools
+Enabled,"""AIプログラミング""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,User Interface
+Enabled,"""転移学習""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Learning Models
+Enabled,"""小売AI""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Application Domains
+Enabled,"""AIセキュリティ""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Advanced Technologies
+Enabled,[ソニーNNC],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Development Tools
+Enabled,"""パラメータ最適化""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Technical Features
+Enabled,"""AIアルゴリズム""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Core Technologies
+Enabled,"""Neural Network Console""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Development Tools
+Enabled,[TensorFlow],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Programming and Languages
+Enabled,"""AIワークショップ""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Educational and Community
+Enabled,"""自動車AI""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Application Domains
+Enabled,"""AIインターフェース""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,User Interface
+Enabled,[AI圧縮],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Advanced Technologies
+Enabled,[ファイナンスAI],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Application Domains
+Enabled,[AIモデル],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Technical Features
+Enabled,"""Python AI""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Programming and Languages
+Enabled,"""Scikit-Learn""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Programming and Languages
+Enabled,"""ファイナンスAI""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Application Domains
+Enabled,[機械学習],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Core Technologies
+Enabled,"""AIコミュニティ""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Educational and Community
+Enabled,"""AI圧縮""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Advanced Technologies
+Enabled,"""モデル検証""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Technical Features
+Enabled,[ニューラルネットワーク UI],Exact match,General_01,Not eligible,rarely served,0,JPY,0,0,0, --,0,0,0.00%,Development Tools
+Enabled,[強化学習],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Advanced Technologies
+Enabled,"""AIモデル""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Technical Features
+Enabled,[AI勉強],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,User Interface
+Enabled,[AIワークショップ],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Educational and Community
+Enabled,[ソニー AI],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Core Technologies
+Enabled,[AIコミュニティ],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Educational and Community
+Enabled,"""CNN""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Learning Models
+Enabled,"""AIコーディング""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,User Interface
+Enabled,[クラウドAI],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Cloud and Systems
+Enabled,"""AIコース""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Educational and Community
+Enabled,[GAN],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Learning Models
+Enabled,[AIコーディング],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,User Interface
+Enabled,"""AI勉強""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,User Interface
+Enabled,[AIプログラミング],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,User Interface
+Enabled,"""AI GPU""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Cloud and Systems
+Enabled,[RNN],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Learning Models
+Enabled,"""ディープラーニング""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Core Technologies
+Enabled,[AIセキュリティ],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Advanced Technologies
+Enabled,[Scikit-Learn],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Programming and Languages
+Enabled,"""マルチGPU""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Cloud and Systems
+Enabled,[合成データ],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Advanced Technologies
+Enabled,"""Keras""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Programming and Languages
+Enabled,[GPU加速],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Technical Features
+Enabled,[自動車AI],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Application Domains
+Enabled,[LSTM],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Learning Models
+Enabled,[ディープAI],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Educational and Community
+Enabled,"""PyTorch""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Programming and Languages
+Enabled,[リアルタイムAI],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Technical Features
+Enabled,[小売AI],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Application Domains
+Enabled,"""LSTM""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Learning Models
+Enabled,[転移学習],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Learning Models
+Enabled,"""ニューラルネットワーク UI""",Phrase match,General_01,Not eligible,rarely served,0,JPY,0,0,0, --,0,0,0.00%,Development Tools
+Enabled,[パラメータ最適化],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Technical Features
+Enabled,[Python AI],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Programming and Languages
+Enabled,[ディープラーニング],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Core Technologies
+Enabled,"""GPU加速""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Technical Features
+Enabled,"""量子AI""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Advanced Technologies
+Enabled,"""強化学習""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Advanced Technologies
+Enabled,[分散学習],Exact match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Cloud and Systems
+Enabled,"""分散学習""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Cloud and Systems
+Enabled,"""ヘルスケアAI""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Application Domains
+Enabled,"""機械学習ソフト""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Development Tools
+Enabled,"""ソニー AI""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Core Technologies
+Enabled,"""クラウドAI""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Cloud and Systems
+Enabled,"""AI研究""",Phrase match,General_01,Eligible,,0,JPY,0,0,0, --,0,0,0.00%,Educational and Community
