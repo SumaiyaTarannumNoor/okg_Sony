@@ -38,6 +38,9 @@ The project uses an `.ini` file to store various configurations and hyperparamet
 - `SERPAPI_API_KEY`: API key for accessing SERPAPI services.
 
 ## Dataset
+
+We present a publicly accessible dataset that includes real Japanese keyword data with its KPIs across various domains. The [dataset](https://github.com/wang1946may7/OKG/tree/main/dataset) includes real advertisement deliveries for 10 Sony products and IT services: Sony electronic devices like cameras and TVs, Sony financial services including Sony Bank mortgages and health insurance, and Sony AI platforms such as the Sony Neural Network Console and Prediction One. The dataset contains not only the actual delivered keywords but also the performance of each keyword, including search volume, clicks, competitor score, and cost-per-click.
+
 [Dataset](https://github.com/wang1946may7/OKG/tree/main/dataset) - See this folder for more details on our datasets. Accessed on October 1, 2024.
 
 ## Usage
