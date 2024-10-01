@@ -38,7 +38,7 @@ The project uses an `.ini` file to store various configurations and hyperparamet
 - `SERPAPI_API_KEY`: API key for accessing SERPAPI services.
 
 ## Dataset
-[Data Folder](https://[github.com/wang1946may7/OKG/tree/main/dataset](https://github.com/wang1946may7/OKG/tree/main/dataset)) - See this folder for more details on our datasets. Accessed on October 1, 2024.
+[Dataset](https://github.com/wang1946may7/OKG/tree/main/dataset) - See this folder for more details on our datasets. Accessed on October 1, 2024.
 
 ## Usage
 Run the main script:
