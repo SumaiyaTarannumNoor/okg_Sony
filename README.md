@@ -37,7 +37,8 @@ The project uses an `.ini` file to store various configurations and hyperparamet
 - `OPENAI_EMBEDDING_AZURE_OPENAI_ENDPOINT`: Endpoint for embedding API Azure integration.
 - `SERPAPI_API_KEY`: API key for accessing SERPAPI services.
 
-
+## Dataset
+[Data Folder](https://github.com/user/example-repo/tree/master/data) - See this folder for more details on our datasets. Accessed on October 1, 2024.
 
 ## Usage
 Run the main script:
