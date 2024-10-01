@@ -18,8 +18,6 @@ import re
 
 from metrics import evaluate_keywords_against_paragraph, jaccard_similarity, cosine_similarity_calc, find_most_relevant_keywords,find_best_match_for_keyword,update_clicks,r_kw_plan_bert,r_kw_plan
 
-from transformers import logging
-logging.set_verbosity_error()
 
 from concurrent.futures import ProcessPoolExecutor
 
@@ -28,6 +26,9 @@ from transformers import AutoTokenizer, AutoModel
 from bert_score import score as bert_score
 from bert_score import BERTScorer
 from sklearn.feature_extraction.text import CountVectorizer
+
+from transformers import logging
+logging.set_verbosity_error()
 
 # Load the BERT model
 tokenizer = AutoTokenizer.from_pretrained("bert-base-multilingual-cased")
@@ -78,6 +79,8 @@ class okg_agent:
             self.df_score = pd.read_csv('./preprocessing/data/score_data/rakkokeyword_sony_camera.csv', delimiter='\t', quotechar='"', encoding='utf-16')
         elif str(self.config['CAMPAIGN']['PRODUCT_NAME']) == 'ソニー銀行 住宅ローン':
             self.df_score = pd.read_csv('./preprocessing/data/score_data/rakkokeyword_sony_bank_morgage.csv', delimiter='\t', quotechar='"', encoding='utf-16')
+        elif str(self.config['CAMPAIGN']['PRODUCT_NAME']) == 'ソニー Prediction One':
+            self.df_score = pd.read_csv('./dataset/sony_prediction_one.csv', delimiter='\t')
         
         else:
             raise ValueError("Failed to read the PRODUCT_NAME: " + str(self.config['CAMPAIGN']['PRODUCT_NAME']))
@@ -108,12 +111,9 @@ class okg_agent:
         df = self.dataframe
         # rejected_kw_list = rejected_kw_list
         # Read the list from the file
-        if str(self.config['EXE']['S3_DEPLOY']) == 'True':
-            with open(self.s3_path, 'r') as file:
-                rejected_kw_list = [line.strip() for line in file]
-        else:
-            with open('./string_list.txt', 'r') as file:
-                rejected_kw_list = [line.strip() for line in file]
+       
+        with open('./preprocessing/data/string_list.txt', 'r') as file:
+            rejected_kw_list = [line.strip() for line in file]
         # ignore the last two rows  
         #df = df.iloc[:-2]
         # select the columns
@@ -150,20 +150,20 @@ class okg_agent:
             if step == 0:
 
                 if str(self.config['CAMPAIGN']['PRODUCT_NAME']) == 'ソニーテレビ ブラビア':
-                    KW_loader = CSVLoader('./preprocessing/data/kw_data/current_KW_sony_bravia.csv')
-                    df = pd.read_csv('./preprocessing/data/kw_data/current_KW_sony_bravia.csv')
+                    KW_loader = CSVLoader('./preprocessing/data/kw_data/initial_KW_sony_bravia.csv')
+                    df = pd.read_csv('./preprocessing/data/kw_data/initial_KW_sony_bravia.csv')
                 elif str(self.config['CAMPAIGN']['PRODUCT_NAME']) == 'ソニー損保 医療保険':
-                    KW_loader = CSVLoader('./preprocessing/data/kw_data/current_KW_sony_insurance.csv')
-                    df = pd.read_csv('./preprocessing/data/kw_data/current_KW_sony_insurance.csv')
+                    KW_loader = CSVLoader('./preprocessing/data/kw_data/initial_KW_sony_insurance.csv')
+                    df = pd.read_csv('./preprocessing/data/kw_data/initial_KW_sony_insurance.csv')
                 elif str(self.config['CAMPAIGN']['PRODUCT_NAME']) == 'ソニーデジタル一眼カメラ α（アルファ）':
-                    KW_loader = CSVLoader('./preprocessing/data/kw_data/current_KW_sony_camera.csv')
-                    df = pd.read_csv('./preprocessing/data/kw_data/current_KW_sony_camera.csv')
+                    KW_loader = CSVLoader('./preprocessing/data/kw_data/initial_KW_sony_camera.csv')
+                    df = pd.read_csv('./preprocessing/data/kw_data/initial_KW_sony_camera.csv')
                 elif str(self.config['CAMPAIGN']['PRODUCT_NAME']) == 'ソニー銀行 住宅ローン':
-                    KW_loader = CSVLoader('./preprocessing/data/kw_data/current_KW_sony_bank_morgage.csv')
-                    df = pd.read_csv('./preprocessing/data/kw_data/current_KW_sony_bank_morgage.csv')
+                    KW_loader = CSVLoader('./preprocessing/data/kw_data/initial_KW_sony_bank_morgage.csv')
+                    df = pd.read_csv('./preprocessing/data/kw_data/initial_KW_sony_bank_morgage.csv')
                 elif str(self.config['CAMPAIGN']['PRODUCT_NAME']) == 'ソニー Prediction One':
-                    KW_loader = CSVLoader('./preprocessing/data/kw_data/current_KW_sony_PO.csv')
-                    df = pd.read_csv('./preprocessing/data/kw_data/current_KW_sony_po.csv')
+                    KW_loader = CSVLoader('./preprocessing/data/kw_data/initial_KW_sony_po.csv')
+                    df = pd.read_csv('./preprocessing/data/kw_data/initial_KW_sony_po.csv')
 
                 else:
                     raise ValueError("Failed to read the PRODUCT_NAME: " + str(self.config['CAMPAIGN']['PRODUCT_NAME']))
@@ -180,9 +180,6 @@ class okg_agent:
                     str(self.config['TOOL']['GOOD_KW_RETRIEVAL_DISCRPTION']),
                 )
 
-
-                # 3. rule tool 
-                rule_loader = TextLoader(str(self.config['FILE']['DOMAIN_KNOWLEDGE_FILE']))
 
                 # 4. exampler tool
                 exampler_loader = TextLoader(str(self.config['FILE']['EXAMPLER_FILE']))
@@ -230,12 +227,8 @@ class okg_agent:
                 #while True:
                     
                 # read new rejected_kw_list
-                if str(self.config['EXE']['S3_DEPLOY']) == 'True':
-                    with open(self.s3_path, 'r') as file:
-                        rejected_kw_list = [line.strip() for line in file]
-                else:
-                    with open('./string_list.txt', 'r') as file:
-                        rejected_kw_list = [line.strip() for line in file]
+                with open('./preprocessing/data/string_list.txt', 'r') as file:
+                    rejected_kw_list = [line.strip() for line in file]
 
                 # Define the hyperparameters
                 num_keywords_per_category = int(self.config['KEYWORD']['NUM_KEYWORDS_PER_CATEGORY'])
@@ -351,14 +344,9 @@ class okg_agent:
                             rejected_kw_list.append(str (new_words_list[i]))
                             print ("The new words whose search check is less than 50 is: " + str (new_words_list[i]))
                             # save the rejected_kw_list to a file
-                            if str(self.config['EXE']['S3_DEPLOY']) == 'True':
-                                with open(self.s3_path, 'w') as file:
-                                    for item in rejected_kw_list:
-                                        file.write("%s\n" % item)
-                            else:
-                                with open('./string_list.txt', 'w') as file:
-                                    for item in rejected_kw_list:
-                                        file.write("%s\n" % item)
+                            with open('./preprocessing/data/string_list.txt', 'w') as file:
+                                for item in rejected_kw_list:
+                                    file.write("%s\n" % item)
                         else: 
                             # add keywords to the good_kw_list
                             good_kw_list.append(str (new_words_list[i]))
@@ -428,12 +416,8 @@ class okg_agent:
                     agent_executor = AgentExecutor(agent=agent_chain, tools=tools, return_intermediate_steps=True, verbose=True)
                     
                 # read new rejected_kw_list
-                if str(self.config['EXE']['S3_DEPLOY']) == 'True':
-                    with open(self.s3_path, 'r') as file:
-                        rejected_kw_list = [line.strip() for line in file]
-                else:
-                    with open('./string_list.txt', 'r') as file:
-                        rejected_kw_list = [line.strip() for line in file]
+                with open('./preprocessing/data/string_list.txt', 'r') as file:
+                    rejected_kw_list = [line.strip() for line in file]
                 
                 # need to find the click growth of each keyword
                 # read the whole_kw.csv
@@ -595,14 +579,10 @@ class okg_agent:
                             rejected_kw_list.append(str (new_words_list[i]))
                             print ("The new words whose search check is less than 50 is: " + str (new_words_list[i]))
                             # save the rejected_kw_list to a file
-                            if str(self.config['EXE']['S3_DEPLOY']) == 'True':
-                                with open(self.s3_path, 'w') as file:
-                                    for item in rejected_kw_list:
-                                        file.write("%s\n" % item)
-                            else:
-                                with open('./string_list.txt', 'w') as file:
-                                    for item in rejected_kw_list:
-                                        file.write("%s\n" % item)
+                            
+                            with open('./preprocessing/data/string_list.txt', 'w') as file:
+                                for item in rejected_kw_list:
+                                    file.write("%s\n" % item)
                         else: 
                             # add keywords to the good_kw_list
                             good_kw_list.append(str (new_words_list[i]))

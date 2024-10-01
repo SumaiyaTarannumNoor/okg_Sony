@@ -2,14 +2,12 @@ import configparser
 import os
 import re
 
+
 from metrics import evaluate_keywords_against_paragraph
+from okg_agent import okg_agent
 
 from transformers import logging
 logging.set_verbosity_error()
-
-
-from okg_agent import okg_agent
-
 
 if __name__ == "__main__":
     

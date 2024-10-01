@@ -11,6 +11,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+from transformers import logging
+logging.set_verbosity_error()
 # Load the BERT model
 tokenizer = AutoTokenizer.from_pretrained("bert-base-multilingual-cased")
 bert_model = AutoModel.from_pretrained("bert-base-multilingual-cased")
@@ -18,6 +20,7 @@ bert_model = AutoModel.from_pretrained("bert-base-multilingual-cased")
 scorer = BERTScorer(model_type="bert-base-multilingual-cased", lang="ja", device='cuda' if torch.cuda.is_available() else 'cpu')
 
 from transformers import BertTokenizer, BertModel
+
 
 def evaluate_keywords_against_paragraph2(paragraph, keywords):
     # Join keywords into a string for comparison
