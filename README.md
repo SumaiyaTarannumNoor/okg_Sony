@@ -48,7 +48,8 @@ Run the main script:
    ```bash
    python main.py
    ```
-
+## License
+This project is licensed under the [Attribution-NonCommercial 4.0 International Lisence](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en).
 
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
