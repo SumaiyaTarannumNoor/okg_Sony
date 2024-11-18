@@ -2,7 +2,7 @@
 
 ## Description
 
-This is the official implementation for the paper **OKG: On-the-fly Keyword Generation in Search Sponsered Advertising** authored by **Zhao Wang , Briti Gangopadhyay , Mengjie Zhao , Shingo Takamatsu**,  submitted to COLING 2025. OKG is a dynamic framework leveraging LLM agent to adaptively generate keywords for sponsored search advertising. Additionally, we provided the first publicly accessible dataset with real ad keyword data, offering a valuable resource for future research in keyword optimization. 
+This is the official implementation for the paper **OKG: On-the-fly Keyword Generation in Search Sponsered Advertising** authored by Zhao Wang , Briti Gangopadhyay , Mengjie Zhao , Shingo Takamatsu,  submitted to COLING 2025. OKG is a dynamic framework leveraging LLM agent to adaptively generate keywords for sponsored search advertising. Additionally, we provided the first publicly accessible dataset with real ad keyword data, offering a valuable resource for future research in keyword optimization. 
 
 ![Example Figure](./architecture.png)
 
