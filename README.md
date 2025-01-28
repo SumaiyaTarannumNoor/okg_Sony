@@ -56,3 +56,19 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 ## Contact
 For any questions or issues, feel free to reach out: Zhao.Wang@sony.com or this github repo for any information.
+
+## Cite
+If you use or reference OKG, please cite us with the following BibTeX entry:
+@inproceedings{wang-etal-2025-okg,
+    title = "{OKG}: On-the-Fly Keyword Generation in Sponsored Search Advertising",
+    author = "Wang, Zhao  and
+      Gangopadhyay, Briti  and
+      Zhao, Mengjie  and
+      Takamatsu, Shingo",
+    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics: Industry Track",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    pages = "115--127"
+}
