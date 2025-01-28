@@ -58,7 +58,7 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 For any questions or issues, feel free to reach out: Zhao.Wang@sony.com or this github repo for any information.
 
 ## Cite
-If you use or reference OKG, please cite us with the following BibTeX entry:
+If you use or reference OKG or the keyword dataset, please cite us with the following BibTeX entry:
 ```bibtex
 @inproceedings{wang-etal-2025-okg,
     title = "{OKG}: On-the-Fly Keyword Generation in Sponsored Search Advertising",
