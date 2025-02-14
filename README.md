@@ -43,6 +43,12 @@ We present a publicly accessible dataset that includes real Japanese keyword dat
 
 [Dataset](https://github.com/wang1946may7/OKG/tree/main/dataset) - See this folder for more details on our datasets. Accessed on October 1, 2024.
 
+## Usage
+Run the main script:
+   ```bash
+   python main.py
+   ```
+
 ## Comparison on Real Keyword Performance
 *Clicks, Search Volumes, and CPC are normalized (denoted as N.) to overcome the impact of scale differences across different products.*
 
@@ -56,11 +62,29 @@ We present a publicly accessible dataset that includes real Japanese keyword dat
 |           | RAKE        | 69.8       | 55.87       | 0.87    | 80       |
 | **App.**  | Google KW Plnr. | 44.2   | 43          | 1.0     | 67       |
 
-## Usage
-Run the main script:
-   ```bash
-   python main.py
-   ```
+## Comparison on Relevance and Coverage with Source Meta-data
+
+| Category   | Name            | Relevance (Bert-Score ↑) | Coverage (Bleu2 ↑) | Coverage (Rouge1 ↑) |
+|------------|---------------|--------------------|----------------|----------------|
+| **LLM**    | **OKG**       | **0.63**          | **0.27**       | **0.42**       |
+|            | GPT-4         | 0.61              | 0.12           | 0.23           |
+|            | Gemini 1.5    | 0.59              | 0.13           | 0.21           |
+| **Kwd. Ext.** | Choi       | 0.45              | 0.14           | 0.22           |
+|            | RAKE         | 0.48              | 0.16           | 0.23           |
+| **App.**   | Google KW Plnr. | 0.40            | 0.12           | 0.19           |
+
+## Comparison on Similarity with Offline Real Keywords
+
+| Category   | Name            | Bert-Score ↑ | Jaccard ↑ | Cosine ↑ |
+|------------|---------------|-------------|---------|--------|
+| **LLM**    | **OKG**       | **0.85**    | **0.35** | **0.90** |
+|            | GPT-4         | 0.72        | 0.30    | 0.78    |
+|            | Gemini 1.5    | 0.71        | 0.28    | 0.72    |
+| **Kwd. Ext.** | Choi       | 0.62        | 0.22    | 0.67    |
+|            | RAKE         | 0.70        | 0.25    | 0.58    |
+| **App.**   | Google KW Plnr. | 0.54      | 0.20    | 0.55    |
+
+
 ## License
 This project is licensed under the [Attribution-NonCommercial 4.0 International Lisence](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en).
 
