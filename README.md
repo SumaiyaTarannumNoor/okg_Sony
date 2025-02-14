@@ -43,6 +43,19 @@ We present a publicly accessible dataset that includes real Japanese keyword dat
 
 [Dataset](https://github.com/wang1946may7/OKG/tree/main/dataset) - See this folder for more details on our datasets. Accessed on October 1, 2024.
 
+## Comparison on Real Keyword Performance
+*Clicks, Search Volumes, and CPC are normalized (denoted as N.) to overcome the impact of scale differences across different products.*
+
+| Category  | Name           | Click ↑  | Srch. Vol. ↑  | CPC ↓  | Comp. Score ↓ |
+|-----------|--------------|----------|-------------|--------|-------------|
+|           |              | N. (0~100) | N. (0~100) | N. (0~1) | (0~100) |
+| **LLM**   | **OKG**      | **100.0**  | 62.3        | **0.38** | **56**  |
+|           | GPT-4        | 76.2       | **100.0**   | 0.63    | 78       |
+|           | Gemini 1.5   | 69.1       | 57.30       | 0.62    | 83       |
+| **Kwd. Ext.** | Choi     | 71.8       | 65.7        | 0.76    | 79       |
+|           | RAKE        | 69.8       | 55.87       | 0.87    | 80       |
+| **App.**  | Google KW Plnr. | 44.2   | 43          | 1.0     | 67       |
+
 ## Usage
 Run the main script:
    ```bash
