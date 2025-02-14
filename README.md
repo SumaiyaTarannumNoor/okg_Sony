@@ -48,8 +48,10 @@ Run the main script:
    ```bash
    python main.py
    ```
+## Experimental Result
+We conducted experiments to evaluate our proposed OKG method against existing keyword generation approaches. The evaluation includes four aspects: real keyword performance, relevance and coverage, similarity with offline real keywords, and ablation study on OKG components. The results are summarized in the following tables.
 
-## Comparison on Real Keyword Performance
+### Comparison on Real Keyword Performance
 *Clicks, Search Volumes, and CPC are normalized (denoted as N.) to overcome the impact of scale differences across different products.*
 
 | Category  | Name           | Click ↑  | Srch. Vol. ↑  | CPC ↓  | Comp. Score ↓ |
@@ -62,7 +64,7 @@ Run the main script:
 |           | RAKE        | 69.8       | 55.87       | 0.87    | 80       |
 | **App.**  | Google KW Plnr. | 44.2   | 43          | 1.0     | 67       |
 
-## Comparison on Relevance and Coverage with Source Meta-data
+### Comparison on Relevance and Coverage with Source Meta-data
 
 | Category   | Name            | Relevance (Bert-Score ↑) | Coverage (Bleu2 ↑) | Coverage (Rouge1 ↑) |
 |------------|---------------|--------------------|----------------|----------------|
@@ -73,7 +75,7 @@ Run the main script:
 |            | RAKE         | 0.48              | 0.16           | 0.23           |
 | **App.**   | Google KW Plnr. | 0.40            | 0.12           | 0.19           |
 
-## Comparison on Similarity with Offline Real Keywords
+### Comparison on Similarity with Offline Real Keywords
 
 | Category   | Name            | Bert-Score ↑ | Jaccard ↑ | Cosine ↑ |
 |------------|---------------|-------------|---------|--------|
@@ -83,6 +85,16 @@ Run the main script:
 | **Kwd. Ext.** | Choi       | 0.62        | 0.22    | 0.67    |
 |            | RAKE         | 0.70        | 0.25    | 0.58    |
 | **App.**   | Google KW Plnr. | 0.54      | 0.20    | 0.55    |
+
+### Comparison Results of Component Ablation
+
+| Method                  | BERTScore ↑ | Jaccard ↑ | Cos. Sim. ↑ | Clicks ↑ |
+|-------------------------|------------|----------|------------|---------|
+| **Full OKG**           | **0.83**    | **0.34** | **0.89**   | **13998** |
+| **Fixed Growth OKG**   | 0.81       | 0.28     | 0.83       | 9803    |
+| **Wide Growth Only**   | 0.78       | 0.23     | 0.81       | 7934    |
+| **Deep Growth Only**   | 0.72       | 0.12     | 0.72       | 6543    |
+| **OKG with Reflection** | 0.81       | 0.30     | 0.85       | 11200   |
 
 
 ## License
